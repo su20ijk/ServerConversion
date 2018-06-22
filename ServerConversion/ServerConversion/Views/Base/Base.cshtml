@@ -3,17 +3,48 @@
     ViewBag.Title = "Base";
 }
 
-<h2>Base to Base</h2>
-
-<div>
-    <form action="TurnBinary" method="post">
-        <p>
-            Your Number:
-            <input name="startNumber" type="number" step="any"/>
-        </p>
-        <input name="submit" type="submit" value="Turn Binary">
-    </form>
-    <p>
-        @Model
-    </p>
+<link href="https://fonts.googleapis.com/css?family=Montserrat|Nunito+Sans" rel="stylesheet" />
+<div class="topnav">
+    <a href="index.html">Feet to Meters</a>
+    <a href="C to F.html">Celsius to Fahrenheit</a>
+    <a href="feetInches.html">Feet to Inches</a>
+    <a href="base.html">Base to Base</a>
+    <a href="centimeterToMeter.html">Centimeter to Meter</a>
 </div>
+<div class="header darkBlue">
+    Base to Base
+</div>
+<form action="TurnBinary" method="post">
+    <div class="container">
+        <div class="row">
+            <div class="offset-3 col-2 bgBlue shadow-lg p-3 mb-5 rounded">
+                <div class="row">
+                    <div class="col-6">
+                        <p>
+                            Your Number:
+                            <div>
+                                <input name="startNumber" type="number" step="any" />
+                            </div>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class=" offset-2 col-2 bgBlue shadow-lg p-3 mb-5 rounded">
+                <div class="row">
+                    <div class="col-6">
+                        <p>
+                            In Binary:
+                            <div class="output lineBoarder">
+                                @Model
+                        </div>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="centerize">
+        <br />
+        <input class="medBlue buttonB" type="submit" value="Turn Binary">
+    </div>
+</form>
