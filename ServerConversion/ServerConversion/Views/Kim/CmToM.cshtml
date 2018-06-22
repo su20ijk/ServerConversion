@@ -6,12 +6,29 @@
 <h2>Centimeters To Meters</h2>
 <br />
 <div>
-    <form action="convert" method="post">
-        <p>Meters: <input name="centimeter" type="number" step="any" /></p>
-        <input name="submit" type="submit" />
-    </form>
-    <p>
-        Meters : @Model
-    </p>
+    <div class="topnav">
+        <a href="index.html">Feet to Meters</a>
+        <a href="C to F.html">Celsius to Fahrenheit</a>
+        <a href="feetInches.html">Feet to Inches</a>
+        <a href="base.html">Base to Base</a>
+        <a href="centimeterToMeter.html">Centimeter to Meter</a>
+    </div>
+    <div class="header darkBlue">Centimeters to Meters</div>
+    <br />
+    <div id="bin">
+        <div class="row">
+            <div class="offset-3 col-2 bgBlue shadow-lg p-3 mb-5 rounded">
+                <p class="unit">Centimeters</p>
+                <form action="convert" method="post">
+                    <p><input name="centimeter" type="number" step="any" /></p>
+                    <input name="submit" type="submit" class="input lineBoarder"/>
+                </form>
+            </div>
+            <div class="offset-2 col-2 bgBlue shadow-lg p-3 mb-5 rounded">
+                <p>Meters</p>
+                <p class="output lineBoarder">@Model</p>
+            </div>
+        </div>
+    </div>
 </div>
 
