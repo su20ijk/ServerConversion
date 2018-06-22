@@ -11,7 +11,7 @@ namespace ServerConversion.Controllers
         // GET: FootInches
         public ActionResult FootInches()
         {
-            return View(viewName: "FootInches", model: 0);
+            return View(viewName: "FootInches", model: 0.0);
         }
         public ActionResult Convert(double feet)
         {
