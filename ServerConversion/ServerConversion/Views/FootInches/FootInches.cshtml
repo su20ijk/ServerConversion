@@ -1,0 +1,20 @@
+﻿@model double
+@{
+    ViewBag.Title = "FootInches";
+}
+
+<body>
+    <div>
+        <h1>Feet to Inches</h1>
+    </div>
+    <div>
+        
+            <label for="Number of feet">Feet:</label>
+            <input v-model="feet" type="number" />
+            <label for="Number of inches">Inches:</label>
+            <p>{{ inches }}</p>
+            <button v-on:click="feetInches" class="buttonB medBlue">Convert</button>
+        </form>
+    </div>
+</body>
+
