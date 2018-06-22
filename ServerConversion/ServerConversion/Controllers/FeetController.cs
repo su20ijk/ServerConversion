@@ -16,13 +16,13 @@ namespace ServerConversion.Controllers
 
         public ActionResult FeeetToMiles()
         {
-            return View(viewName: "FeeetToMiles", model: 0);
+            return View(viewName: "FeeetToMiles", model: 0.0);
         }
 
         [HttpPost]
-        public ActionResult Converter(int Feet)
+        public ActionResult Converter(double Feet)
         {
-            int Milesconvert = (Feet) / 5280;
+            double Milesconvert = (Feet) / 5280;
             return View(viewName: "FeeetToMiles", model: (Milesconvert));
         }
     }
