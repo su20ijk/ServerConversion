@@ -9,9 +9,14 @@ namespace ServerConversion.Controllers
     public class FootInchesController : Controller
     {
         // GET: FootInches
-        public ActionResult Index()
+        public ActionResult FootInches()
         {
-            return View();
+            return View(viewName: "FootInches", model: 0);
+        }
+        public ActionResult Convert(double feet)
+        {
+            double inches = feet * 12;
+            return View(viewName: "FootInches", model: inches);
         }
     }
 }
