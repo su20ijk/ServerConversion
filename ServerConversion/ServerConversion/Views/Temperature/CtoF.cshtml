@@ -14,27 +14,25 @@
 <div>
     <h1 class="header darkBlue">Celsius to Fahrenheit</h1>
 </div>
-
+<form action="CtoF" method="post">
+    <br />
     <div class="container">
         <div class="row">
             <div class="offset-3 col-2 bgBlue shadow-lg p-3 mb-5 rounded">
                 <div class="row">
                     <div class="col-6">
-                        <form action="CtoF" method="post">
-                            <p>Celsius: <input name="inputC" type="number" step="any" class="input lineBoarder"/> </p>
-                        </form>
+                        <p>Celsius: <div><input name="inputC" type="number" step="any" class="input lineBoarder" /> </div> </p>
                     </div>
                 </div>
-            </div>
-            <div class=" offset-2 col-2 bgBlue shadow-lg p-3 mb-5 rounded">
                 <div class="row">
                     <div class="col-6">
                         <p>Fahrenheit: <div class="output lineBoarder">@Model</div></p>
                     </div>
                 </div>
                 <div class="centerize">
-                    <input name="submit" type="submit" class="buttonB medBlue"/>
+                    <input name="submit" type="submit" class="buttonB medBlue" />
                 </div>
             </div>
         </div>
     </div>
+</form>
