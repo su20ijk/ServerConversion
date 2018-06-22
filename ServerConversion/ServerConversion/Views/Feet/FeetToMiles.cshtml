@@ -1,0 +1,19 @@
+﻿@model int
+@{
+    ViewBag.Title = "FeetToMiles";
+}
+
+<div class="header darkBlue">
+    Feet to Miles
+</div>
+<br />
+<form action="Converter" method="post">
+    <div class="jumbotron">
+        <p>Feet: <div><input name="Feet" class="input lineBoarder" type="number" /></div></p>
+        <p>Miles:</p>
+        <input name="submit" type="submit" />
+    </div>
+</form>
+<p>
+    @Model
+</p>
