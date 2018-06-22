@@ -1,4 +1,4 @@
-﻿@model double
+﻿@model string
 @{
     ViewBag.Title = "FootInches";
 }
@@ -8,13 +8,15 @@
         <h1>Feet to Inches</h1>
     </div>
     <div>
-        
+        <form action="FootInches" method="post">
             <label for="Number of feet">Feet:</label>
-            <input v-model="feet" type="number" />
+            <input v-model="feet" type="number" step="any" />
             <label for="Number of inches">Inches:</label>
-            <p>{{ inches }}</p>
             <button v-on:click="feetInches" class="buttonB medBlue">Convert</button>
         </form>
-    </div>
+        <p>
+            @Model
+        </p>
+</div>
 </body>
 
