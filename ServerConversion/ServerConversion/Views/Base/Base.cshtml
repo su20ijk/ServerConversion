@@ -1,0 +1,19 @@
+﻿@model string
+@{
+    ViewBag.Title = "Base";
+}
+
+<h2>Base to Base</h2>
+
+<div>
+    <form action="TurnBinary" method="post">
+        <p>
+            Your Number:
+            <input name="startNumber" type="number" step="any"/>
+        </p>
+        <input name="submit" type="submit" value="Turn Binary">
+    </form>
+    <p>
+        @Model
+    </p>
+</div>
