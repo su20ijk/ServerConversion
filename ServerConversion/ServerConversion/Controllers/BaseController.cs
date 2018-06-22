@@ -16,7 +16,7 @@ namespace ServerConversion.Controllers
         [HttpPost]
         public ActionResult TurnBinary(int startNumber)
         {
-            return View(viewName: "Base", model: "Your number will be: " + Convert.ToString(startNumber, 2));
+            return View(viewName: "Base", model: Convert.ToString(startNumber, 2));
         }
     }
 }
